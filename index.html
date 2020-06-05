@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="słowa kluczowe"/>
+  <meta name="description" content="opis strony"/>
+
+  <title>Tytuł</title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="scripts/jquery.scrollTo.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css">
+</head>
+<body>
+
+  <nav class="nav">
+    <div class="container">
+      <div class="wrapper">
+        <input type='checkbox' id='toggle' style='display:none;' />
+          <label class='toggle-btn' for='toggle'>
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+          </label>
+        <header class="header">
+          <h1 class="nav__logo"><a href="#">Transport</a></h1>
+        </header>  
+        <ul class="nav__menu">
+          <li><a href="#" id="start">Start</a></li>
+          <li><a href="#" id="uslugi">Usługi</a></li>
+          <li><a href="#" id="onas">O nas</a></li>
+          <li><a href="#" id="kontakt">Kontakt</a></li>
+          <li><a class="nav__menu--phone" href="tel:"><i class="icon-phone"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <section class="splash">
+    <div class="splash__title">
+      <h2>Usługi transportowe</h2>
+      <p>Jesteśmy na rynku od 2004 roku</p>
+      <a href="#" class="splash__btn" id="btn"><i class="icon-angle-double-down"></i></a>
+    </div>
+  </section>
+
+  <section class="services" id="services">
+    <div class="container">
+      <h3 class="section__title">Usługi</h3>
+      <p class="section__text">Zapraszam do współpracy, firma, która nigdy Cię nie zawiedzie, zobacz nasze usługi</p>
+      <div class="services__box">
+        <i class="icon-location"></i>
+        <h4>Title 1</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sem lorem, vulputate viverra odio nec, malesuada commodo lorem. Vestibulum facilisis justo id ipsum pharetra fringilla. Suspendisse ut ligula ante. Ut non ipsum tellus.</p>
+      </div>
+      <div class="services__box services__right">
+        <i class="icon-globe"></i>
+        <h4>Title 2</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sem lorem, vulputate viverra odio nec, malesuada commodo lorem. Vestibulum facilisis justo id ipsum pharetra fringilla. Suspendisse ut ligula ante. Ut non ipsum tellus.</p>
+      </div>
+      <div class="services__box">
+        <i class="icon-road"></i>
+        <h4>Title 3</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sem lorem, vulputate viverra odio nec, malesuada commodo lorem. Vestibulum facilisis justo id ipsum pharetra fringilla. Suspendisse ut ligula ante. Ut non ipsum tellus.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <div class="container">
+      <h3 class="section__title">O nas</h3>
+      <p class="section__text">Solidna firma, która od ponad 10 lat działa na rynku</p>
+      <div class="wrapper">
+        <div class="about__box">
+          <img src="img/about.jpg" alt="O nas" title="O nas">
+        </div>
+        <div class="about__box">
+          <h4>Title 3</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sem lorem, vulputate viverra odio nec, malesuada commodo lorem. Vestibulum facilisis justo id ipsum pharetra fringilla. Suspendisse ut ligula ante. Ut non ipsum tellus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus sem lorem, vulputate viverra odio nec, malesuada commodo lorem. Vestibulum facilisis justo id ipsum pharetra fringilla. Suspendisse ut ligula ante. Ut non ipsum tellus.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <section class="gallery">
+    <div class="gallery__wrapper">
+      <div class="gallery__box">
+        <img src="img/flota1.jpg" alt="Flota" title="Flota">
+      </div>
+      <div class="gallery__box">
+        <img src="img/flota2.jpg" alt="Flota" title="Flota">
+      </div>
+      <div class="gallery__box">
+        <img src="img/flota3.jpg" alt="Flota" title="Flota">
+      </div>
+      <div class="gallery__box">
+        <img src="img/flota4.jpg" alt="Flota" title="Flota">
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <div class="container">
+      <h3 class="section__title">Kontakt</h3>
+      <p class="section__text">Zapraszam do kontaktu za pośrdenictwem numeru telefonu lub drogą mailową</p>
+      <div class="wrapper">
+
+        <div class="contact__box">
+          <h4>Firma</h4>
+          <ul>
+            <li>Firma transporotwa xyz</li>
+            <li>NIP 000 000 000 00</li>
+            <li>ul. Sezamkowa 99</li>
+            <li>00-000 Konin</li>
+          </ul>
+        </div>
+
+        <div class="contact__box">
+          <h4>Kontakt</h4>
+          <ul>
+            <li><i class="icon-mail"></i> kontakt@firmatransporotwa.pl</li>
+            <li><a class="nav__menu--phone" href="tel:"><i class="icon-phone"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="contact__box">
+          <h4>Media</h4>
+          <ul>
+            <li>Facebook</li>
+            <li>Instagram</li>
+            <li>Youtube</li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="wrapper">
+        <p>&copy; 2020 Firma transportowa</p>
+        <p>Designed by <a target="_blank" href="https://michalgrzegorczyk.pl/">Michał Grzegorczyk</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <span class="scrollTopButton"><i class="icon-angle-double-up"></i></span>
+
+  <script src="scripts/script.js"></script>
+</body>
+</html>
