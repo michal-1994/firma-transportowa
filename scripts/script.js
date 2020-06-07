@@ -40,10 +40,20 @@ $(function(){
 			$('.scrollTopButton').removeClass('show');
 		}
   });
-	$('.scrollTopButton').click(function() { $.scrollTo($('body'), 400); });
-	$('#start').click(function() { $.scrollTo($('body'), 400); toggle.checked = false});
-  $('#btn').click(function() { $.scrollTo($('#services'), 500); });
-	$('#uslugi').click(function() { $.scrollTo($('#services'), 500); toggle.checked = false});
-	$('#onas').click(function() { $.scrollTo($('#about'), 500); toggle.checked = false});
-	$('#kontakt').click(function() { $.scrollTo($('#contact'), 500); toggle.checked = false});
+  $('.scrollTopButton').click(function() { $.scrollTo($('body'), 400); });
+  
+  $('#start').click(function() 
+  { $.scrollTo($('body'), 400); toggle.checked = false});
+
+  $('#btn').click(function() 
+  { $.scrollTo($('#services'), 500); });
+
+  $('#uslugi').click(function() 
+  { $.scrollTo($('#services'), 500); toggle.checked = false});
+
+  $('#onas').click(function() 
+  { $.scrollTo($('#about'), 500); toggle.checked = false});
+
+  $('#kontakt').click(function() 
+  { $.scrollTo($('#contact'), 500); toggle.checked = false});
 });

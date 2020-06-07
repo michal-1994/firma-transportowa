@@ -1,6 +1,6 @@
 // Variables
-@color-primary: rgba(204, 174, 98,1.0);
-@color-secondary: rgba(204, 174, 98,0.95);
+@color-primary: rgba(34, 112, 147,1.0);
+@color-secondary: rgba(34, 112, 147,0.97);
 @color-extra: #333333;
 @color-text: #ffffff;
 @base-size: 12px;
@@ -77,8 +77,8 @@ nav {
 .nav {
   background: @color-secondary;
   margin: 0;
-  height: @base-size * 7;
-  line-height: @base-size * 7;
+  height: @base-size * 6;
+  line-height: @base-size * 6;
   position: fixed;
   width: 100%;
   top: 0;
@@ -91,7 +91,7 @@ nav {
 }
 
 .nav__hidden {
-  top: -@base-size * 6;
+  top: -@base-size * 4.5;
 }
 
 .nav__logo {
@@ -106,10 +106,10 @@ nav {
   list-style-type: none;
   li {
     display: inline-block;
-    margin: auto @base-size * 1.4;
-    font-size: @base-size * 1.4;
+    margin: auto @base-size * 1.5;
+    font-size: @base-size * 1.5;
     color: @color-text;
-    opacity: 0.9;
+    opacity: 0.95;
     :hover {
       opacity: 1;
     }
@@ -331,7 +331,7 @@ nav {
   .nav__menu {
     background: @color-primary;
     position: absolute;
-    top: @base-size * 7;
+    top: @base-size * 6;
     right: -60vw;
     width: 60vw;
     height: 100vh;
@@ -360,8 +360,8 @@ nav {
   .toggle-btn {
     display: block;
     position: absolute;
-    right: @base-size * 3.4;
-    top: @base-size * 2.2;
+    right: @base-size * 3.2;
+    top: @base-size * 1.7;
     cursor: pointer;
     z-index: 999;
   }
@@ -376,7 +376,7 @@ nav {
 
   #toggle:checked ~ .nav__menu {
     visibility: visible;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.25s linear;
     right: 0;
   }
 
@@ -453,10 +453,6 @@ nav {
 @media (max-width: 580px) {
   .gallery__box {
     height: @base-size * 14;
-  }
-
-  section {
-    padding: 40px 0; 
   }
 
   .section__text {

@@ -60,23 +60,23 @@ nav:hover {
   top: 0;
 }
 .nav {
-  background: rgba(204, 174, 98, 0.95);
+  background: rgba(34, 112, 147, 0.97);
   margin: 0;
-  height: 84px;
-  line-height: 84px;
+  height: 72px;
+  line-height: 72px;
   position: fixed;
   width: 100%;
   top: 0;
   z-index: 999;
   transition-duration: 0.4s;
-  border-bottom: 1px solid rgba(198, 164, 79, 0.95);
+  border-bottom: 1px solid rgba(29, 96, 126, 0.97);
 }
 .nav label,
 .nav input {
   display: none;
 }
 .nav__hidden {
-  top: -72px;
+  top: -54px;
 }
 .nav__logo {
   margin: 0;
@@ -90,10 +90,10 @@ nav:hover {
 }
 .nav__menu li {
   display: inline-block;
-  margin: auto 16.8px;
-  font-size: 16.8px;
+  margin: auto 18px;
+  font-size: 18px;
   color: #ffffff;
-  opacity: 0.9;
+  opacity: 0.95;
 }
 .nav__menu li :hover {
   opacity: 1;
@@ -132,7 +132,7 @@ nav:hover {
   font-size: 96px;
 }
 .splash__btn:hover {
-  color: #ccae62;
+  color: #227093;
 }
 /* Services */
 .services__box {
@@ -150,7 +150,7 @@ nav:hover {
 .services__box i {
   font-size: 126px;
   opacity: 0.15;
-  color: #ccae62;
+  color: #227093;
   position: absolute;
   left: -36px;
   top: 24px;
@@ -232,8 +232,8 @@ nav:hover {
   color: #ffffff;
   font-size: 14.4px;
   padding: 18px;
-  background: #ccae62;
-  border-top: 1px solid rgba(198, 164, 79, 0.95);
+  background: #227093;
+  border-top: 1px solid rgba(29, 96, 126, 0.97);
 }
 .footer p {
   margin: 12px;
@@ -253,7 +253,7 @@ nav:hover {
   opacity: 0.7;
   right: 10px;
   bottom: 50px;
-  color: rgba(204, 174, 98, 0.95);
+  color: rgba(34, 112, 147, 0.97);
   font-size: 96px;
 }
 .scrollTopButton:hover {
@@ -284,9 +284,9 @@ nav:hover {
     top: 0;
   }
   .nav__menu {
-    background: #ccae62;
+    background: #227093;
     position: absolute;
-    top: 84px;
+    top: 72px;
     right: -60vw;
     width: 60vw;
     height: 100vh;
@@ -295,13 +295,13 @@ nav:hover {
     transition: all 0.3s ease-in-out;
   }
   .nav__menu li {
-    background: rgba(204, 174, 98, 0.95);
+    background: rgba(34, 112, 147, 0.97);
     color: #ffffff;
     display: block;
     margin: 0 24px;
     padding: 0 9.6px;
     border-radius: 3px;
-    border-bottom: 1px solid #d2b875;
+    border-bottom: 1px solid #2780a8;
     text-align: right;
   }
   .nav__menu li a {
@@ -309,13 +309,13 @@ nav:hover {
     outline: none;
   }
   .nav__menu li:hover {
-    background: #d2b875;
+    background: #2780a8;
   }
   .toggle-btn {
     display: block;
     position: absolute;
-    right: 40.8px;
-    top: 26.4px;
+    right: 38.4px;
+    top: 20.4px;
     cursor: pointer;
     z-index: 999;
   }
@@ -328,7 +328,7 @@ nav:hover {
   }
   #toggle:checked ~ .nav__menu {
     visibility: visible;
-    transition: all 0.25s ease-in-out;
+    transition: all 0.25s linear;
     right: 0;
   }
   #toggle:checked + label.toggle-btn .bar:nth-child(2) {
@@ -390,9 +390,6 @@ nav:hover {
 @media (max-width: 580px) {
   .gallery__box {
     height: 168px;
-  }
-  section {
-    padding: 40px 0;
   }
   .section__text {
     font-size: 16.8px;
