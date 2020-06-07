@@ -249,14 +249,11 @@ nav {
   width: 32%;
   margin-bottom: @base-size * 3;
   padding: @base-size;
-  h4 {
-    text-align: left;
-  }
+  text-align: left;
   ul {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    text-align: left;
     li {
       opacity: 0.9;
       font-size: @base-size * 1.3;
@@ -306,6 +303,10 @@ nav {
 
 /* Media */
 @media (max-width: 760px) {
+  .container {
+    padding: 0 20px;
+  }
+
   .about__box {
     width: 100%;
   }
@@ -331,8 +332,8 @@ nav {
     background: @color-primary;
     position: absolute;
     top: @base-size * 7;
-    right: -65vw;
-    width: 65vw;
+    right: -60vw;
+    width: 60vw;
     height: 100vh;
     z-index: 999;
     padding-top: @base-size;
@@ -374,9 +375,8 @@ nav {
   }
 
   #toggle:checked ~ .nav__menu {
-    opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-in-out;
     right: 0;
   }
 
@@ -427,7 +427,8 @@ nav {
   .contact__box {
     margin-bottom: 0;
     padding: @base-size * 0.5;
-    width: 70%;
+    width: 100%;
+    text-align: center;
   }
 
   .nav__menu--phone {
@@ -466,6 +467,11 @@ nav {
   .nav__hidden {
     top: 0;
   }
+
+  .splash {
+    height: 500px;
+    padding-top: 150px;
+  }
   
   .services__box, .splash__title {
     width: 100%;
@@ -474,6 +480,7 @@ nav {
   .contact__box {
     padding: 0;
     width: 100%;
+    text-align: left;
   }
 
   .services__box {

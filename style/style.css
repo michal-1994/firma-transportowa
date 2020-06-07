@@ -216,15 +216,12 @@ nav:hover {
   width: 32%;
   margin-bottom: 36px;
   padding: 12px;
-}
-.contact__box h4 {
   text-align: left;
 }
 .contact__box ul {
   margin: 0;
   padding: 0;
   list-style-type: none;
-  text-align: left;
 }
 .contact__box ul li {
   opacity: 0.9;
@@ -269,6 +266,9 @@ nav:hover {
 }
 /* Media */
 @media (max-width: 760px) {
+  .container {
+    padding: 0 20px;
+  }
   .about__box {
     width: 100%;
   }
@@ -287,8 +287,8 @@ nav:hover {
     background: #ccae62;
     position: absolute;
     top: 84px;
-    right: -65vw;
-    width: 65vw;
+    right: -60vw;
+    width: 60vw;
     height: 100vh;
     z-index: 999;
     padding-top: 12px;
@@ -327,9 +327,8 @@ nav:hover {
     transition: all 0.5s linear;
   }
   #toggle:checked ~ .nav__menu {
-    opacity: 1;
     visibility: visible;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.25s ease-in-out;
     right: 0;
   }
   #toggle:checked + label.toggle-btn .bar:nth-child(2) {
@@ -371,7 +370,8 @@ nav:hover {
   .contact__box {
     margin-bottom: 0;
     padding: 6px;
-    width: 70%;
+    width: 100%;
+    text-align: center;
   }
   .nav__menu--phone::after {
     content: ' Zadzwoń teraz';
@@ -401,6 +401,10 @@ nav:hover {
   .nav__hidden {
     top: 0;
   }
+  .splash {
+    height: 500px;
+    padding-top: 150px;
+  }
   .services__box,
   .splash__title {
     width: 100%;
@@ -408,6 +412,7 @@ nav:hover {
   .contact__box {
     padding: 0;
     width: 100%;
+    text-align: left;
   }
   .services__box {
     padding: 0 12px 2.4px 72px;
